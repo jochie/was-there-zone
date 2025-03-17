@@ -1,5 +1,5 @@
 * Setup
-Since I had already manually created the zone, I also needed to run these to get things in sync:
+Since I had already manually created the zone, I ran these to get things in sync:
 #+begin_src shell
   terraform import desec_domain.domain "was-there.com"
   terraform import desec_rrset.main-a was-there.com/@/A
@@ -8,3 +8,4 @@ Since I had already manually created the zone, I also needed to run these to get
   terraform import desec_rrset.main-mx was-there.com/@/MX
   terraform import desec_rrset.main-spf was-there.com/@/TXT
 #+end_src
+After that, Terraform should be able to take over
