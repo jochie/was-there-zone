@@ -1,0 +1,10 @@
+* Setup
+Since I had already manually created the zone, I also needed to run these to get things in sync:
+#+begin_src shell
+  terraform import desec_domain.domain "was-there.com"
+  terraform import desec_rrset.main-a was-there.com/@/A
+  terraform import desec_rrset.main-aaaa was-there.com/@/AAAA
+  terraform import desec_rrset.www-cname was-there.com/www/CNAME
+  terraform import desec_rrset.main-mx was-there.com/@/MX
+  terraform import desec_rrset.main-spf was-there.com/@/TXT
+#+end_src
