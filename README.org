@@ -1,3 +1,5 @@
+* Purpose
+Terraform code managing the was-there.com zone at deSEC.io
 * Setup
 Since I had already manually created the zone, I ran these to get things in sync:
 #+begin_src shell
